@@ -1,73 +1,82 @@
 .dashboard-page {
   min-height: 100vh;
-  background-color: #f8fafc;
+  background-color: var(--color-neutral-50);
 }
 
 .dashboard-content {
-  padding: 40px 0;
+  padding: var(--space-2xl) 0;
 }
 
 .page-header {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: var(--space-5xl);
 }
 
 .page-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #1e3a8a;
-  margin-bottom: 10px;
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+  animation: fade-in var(--motion-duration-base) var(--motion-ease);
 }
 
 .page-subtitle {
-  font-size: 1.1rem;
-  color: #6b7280;
+  font-size: var(--font-size-lg);
+  color: var(--color-neutral-500);
   margin-bottom: 0;
 }
 
 .dashboard-card {
   border: none;
-  border-radius: 16px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--motion-duration-base) var(--motion-ease),
+    box-shadow var(--motion-duration-base) var(--motion-ease);
   height: 100%;
   cursor: pointer;
+  background: #ffffff;
+  animation: scale-up var(--motion-duration-base) var(--motion-ease);
 }
 
 .dashboard-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-lg);
 }
 
 .dashboard-card .card-body {
-  padding: 30px;
+  padding: var(--space-2xl);
   text-align: center;
 }
 
 .card-icon {
   width: 60px;
   height: 60px;
-  background-color: #1e3a8a;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 20px;
+  margin: 0 auto var(--space-lg);
   color: white;
-  font-size: 24px;
+  font-size: var(--font-size-2xl);
+  transition: transform var(--motion-duration-base) var(--motion-ease);
+}
+
+.dashboard-card:hover .card-icon {
+  transform: scale(1.15) rotate(5deg);
 }
 
 .card-title {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #1e3a8a;
-  margin-bottom: 15px;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
 }
 
 .card-text {
-  color: #6b7280;
-  font-size: 0.95rem;
-  line-height: 1.5;
+  color: var(--color-neutral-500);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-md);
   margin-bottom: 0;
 }
 

@@ -1,6 +1,19 @@
+/* Import Design System */
+@import url('./styles/design-tokens.css');
+@import url('./styles/utilities.css');
+@import url('./styles/animations.css');
+
 /* App specific styles */
 .App {
   min-height: 100vh;
+}
+
+/* Accessibility & Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* Home page specific styles */

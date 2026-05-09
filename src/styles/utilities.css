@@ -1,0 +1,157 @@
+/*
+  Utility Classes: Buttons, Cards, Typography, Spacing, Flex, Shadows, Colors
+  Usage: Add utility classes to elements for quick styling
+*/
+
+/* Button Variants */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-md);
+  padding: 0.5em 1.5em;
+  font-size: var(--font-size-md);
+  transition: background var(--motion-duration-base) var(--motion-ease),
+    color var(--motion-duration-fast) var(--motion-ease),
+    box-shadow var(--motion-duration-fast) var(--motion-ease);
+  cursor: pointer;
+  border: none;
+}
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background: var(--color-primary-dark);
+}
+.btn-secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+.btn-tertiary {
+  background: var(--color-tertiary);
+  color: #fff;
+}
+.btn-danger {
+  background: var(--color-danger);
+  color: #fff;
+}
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Card Base */
+.card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-lg);
+  transition: box-shadow var(--motion-duration-base) var(--motion-ease),
+    transform var(--motion-duration-base) var(--motion-ease);
+}
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px) scale(1.02);
+}
+
+/* Typography Utilities */
+.text-xs { font-size: var(--font-size-xs); }
+.text-sm { font-size: var(--font-size-sm); }
+.text-md { font-size: var(--font-size-md); }
+.text-lg { font-size: var(--font-size-lg); }
+.text-xl { font-size: var(--font-size-xl); }
+.text-2xl { font-size: var(--font-size-2xl); }
+.text-3xl { font-size: var(--font-size-3xl); }
+.text-4xl { font-size: var(--font-size-4xl); }
+.text-5xl { font-size: var(--font-size-5xl); }
+.font-regular { font-weight: var(--font-weight-regular); }
+.font-medium { font-weight: var(--font-weight-medium); }
+.font-bold { font-weight: var(--font-weight-bold); }
+.lh-xs { line-height: var(--line-height-xs); }
+.lh-sm { line-height: var(--line-height-sm); }
+.lh-md { line-height: var(--line-height-md); }
+.lh-lg { line-height: var(--line-height-lg); }
+
+/* Spacing Utilities */
+.m-xs { margin: var(--space-xs); }
+.m-sm { margin: var(--space-sm); }
+.m-md { margin: var(--space-md); }
+m-lg { margin: var(--space-lg); }
+.m-xl { margin: var(--space-xl); }
+.p-xs { padding: var(--space-xs); }
+.p-sm { padding: var(--space-sm); }
+.p-md { padding: var(--space-md); }
+.p-lg { padding: var(--space-lg); }
+.p-xl { padding: var(--space-xl); }
+.mt-xs { margin-top: var(--space-xs); }
+.mt-sm { margin-top: var(--space-sm); }
+.mt-md { margin-top: var(--space-md); }
+.mt-lg { margin-top: var(--space-lg); }
+.mt-xl { margin-top: var(--space-xl); }
+.mb-xs { margin-bottom: var(--space-xs); }
+.mb-sm { margin-bottom: var(--space-sm); }
+.mb-md { margin-bottom: var(--space-md); }
+.mb-lg { margin-bottom: var(--space-lg); }
+.mb-xl { margin-bottom: var(--space-xl); }
+/* ...add more as needed... */
+
+/* Flex Utilities */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-xs { gap: var(--space-xs); }
+.gap-sm { gap: var(--space-sm); }
+.gap-md { gap: var(--space-md); }
+.gap-lg { gap: var(--space-lg); }
+
+/* Shadow Utilities */
+.shadow-xs { box-shadow: var(--shadow-xs); }
+.shadow-sm { box-shadow: var(--shadow-sm); }
+.shadow-md { box-shadow: var(--shadow-md); }
+.shadow-lg { box-shadow: var(--shadow-lg); }
+.shadow-xl { box-shadow: var(--shadow-xl); }
+
+/* Color Utilities */
+.bg-primary { background: var(--color-primary); color: #fff; }
+.bg-secondary { background: var(--color-secondary); color: #fff; }
+.bg-tertiary { background: var(--color-tertiary); color: #fff; }
+.bg-danger { background: var(--color-danger); color: #fff; }
+.bg-success { background: var(--color-success); color: #fff; }
+.bg-warning { background: var(--color-warning); color: #fff; }
+.bg-info { background: var(--color-info); color: #fff; }
+.bg-neutral-50 { background: var(--color-neutral-50); }
+.bg-neutral-100 { background: var(--color-neutral-100); }
+.bg-neutral-200 { background: var(--color-neutral-200); }
+.bg-neutral-300 { background: var(--color-neutral-300); }
+.bg-neutral-400 { background: var(--color-neutral-400); }
+.bg-neutral-500 { background: var(--color-neutral-500); }
+.bg-neutral-600 { background: var(--color-neutral-600); }
+.bg-neutral-700 { background: var(--color-neutral-700); }
+.bg-neutral-800 { background: var(--color-neutral-800); }
+.bg-neutral-900 { background: var(--color-neutral-900); }
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-danger { color: var(--color-danger); }
+.text-success { color: var(--color-success); }
+.text-warning { color: var(--color-warning); }
+.text-info { color: var(--color-info); }
+.text-neutral-900 { color: var(--color-neutral-900); }
+.text-neutral-700 { color: var(--color-neutral-700); }
+.text-neutral-500 { color: var(--color-neutral-500); }
+
+/* Import Form Components CSS */
+@import url('./form-components.css');
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

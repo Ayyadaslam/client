@@ -1,25 +1,26 @@
 .testimonials-section {
-  padding: 80px 0;
-  background-color: #f9fafb;
+  padding: var(--space-6xl) 0;
+  background-color: var(--color-neutral-50);
 }
 
 .testimonials-section-header {
-  margin-bottom: 60px;
+  margin-bottom: var(--space-5xl);
 }
 
 .testimonials-section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #1e3a8a;
-  margin-bottom: 20px;
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-lg);
+  animation: fade-in var(--motion-duration-base) var(--motion-ease);
 }
 
 .testimonials-section-subtitle {
-  font-size: 1.1rem;
-  color: #6b7280;
+  font-size: var(--font-size-lg);
+  color: var(--color-neutral-500);
   max-width: 600px;
   margin: 0 auto;
-  line-height: 1.6;
+  line-height: var(--line-height-md);
 }
 
 .testimonials-slider {
@@ -41,8 +42,8 @@
 
 .testimonials-track {
   display: flex;
-  gap: 30px;
-  padding: 20px 0;
+  gap: var(--space-2xl);
+  padding: var(--space-lg) 0;
 }
 
 .testimonial-slide {
@@ -51,32 +52,34 @@
 }
 
 .testimonial-card {
-  background-color: white;
-  border-radius: 16px;
-  padding: 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--motion-duration-base) var(--motion-ease),
+    box-shadow var(--motion-duration-base) var(--motion-ease);
   height: 100%;
   display: flex;
   flex-direction: column;
+  animation: scale-up var(--motion-duration-base) var(--motion-ease);
 }
 
 .testimonial-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-lg);
 }
 
 .testimonial-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: var(--space-lg);
 }
 
 .client-info {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: var(--space-md);
 }
 
 .client-avatar {
@@ -91,10 +94,10 @@
 }
 
 .client-name {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #1e3a8a;
-  margin-bottom: 4px;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
 }
 
 .client-role {

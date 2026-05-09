@@ -1,0 +1,51 @@
+/*
+  Animation Keyframes & Utility Classes
+  Usage: Add animation classes to elements
+*/
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(32px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes scale-up {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes underline-slide {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes icon-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(180deg); }
+}
+@keyframes shimmer {
+  0% { background-position: -468px 0; }
+  100% { background-position: 468px 0; }
+}
+
+/* Animation Utility Classes */
+.animate-fade-in {
+  animation: fade-in var(--motion-duration-base) var(--motion-ease);
+}
+.animate-slide-up {
+  animation: slide-up var(--motion-duration-slow) var(--motion-ease);
+}
+.animate-scale-up {
+  animation: scale-up var(--motion-duration-base) var(--motion-ease);
+}
+.animate-underline-slide {
+  animation: underline-slide var(--motion-duration-fast) var(--motion-ease);
+}
+.animate-icon-rotate {
+  animation: icon-rotate var(--motion-duration-base) var(--motion-ease);
+}
+.animate-shimmer {
+  animation: shimmer 1.5s linear infinite;
+  background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 37%, #f1f5f9 63%);
+  background-size: 400% 100%;
+}

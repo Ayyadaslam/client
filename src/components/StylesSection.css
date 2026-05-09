@@ -1,71 +1,73 @@
 .styles-section {
-  padding: 80px 0;
-  background-color: white;
+  padding: var(--space-6xl) 0;
+  background-color: #ffffff;
 }
 
 .styles-section-header {
-  margin-bottom: 60px;
+  margin-bottom: var(--space-5xl);
 }
 
 .styles-section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #1e3a8a;
-  margin-bottom: 20px;
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-lg);
+  animation: fade-in var(--motion-duration-base) var(--motion-ease);
 }
 
 .styles-section-subtitle {
-  font-size: 1.1rem;
-  color: #6b7280;
+  font-size: var(--font-size-lg);
+  color: var(--color-neutral-500);
   max-width: 700px;
   margin: 0 auto;
-  line-height: 1.6;
+  line-height: var(--line-height-md);
 }
 
 .steps-container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: var(--space-2xl);
 }
 
 .step-item {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
+  gap: var(--space-lg);
   cursor: pointer;
-  padding: 15px;
-  border-radius: 12px;
-  transition: all 0.3s ease;
+  padding: var(--space-md);
+  border-radius: var(--radius-lg);
+  transition: all var(--motion-duration-base) var(--motion-ease);
 }
 
 .step-item:hover {
-  background-color: #f8fafc;
-  transform: translateX(5px);
+  background-color: var(--color-neutral-50);
+  transform: translateX(8px);
 }
 
 .step-item.active {
-  background-color: #eff6ff;
-  border: 2px solid #1e3a8a;
-  transform: translateX(5px);
+  background-color: rgba(30, 58, 138, 0.05);
+  border: 2px solid var(--color-primary);
+  transform: translateX(8px);
 }
 
 .step-number {
-  background-color: #1e3a8a;
-  color: white;
-  width: 40px;
-  height: 40px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
-  font-size: 1.1rem;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);
   flex-shrink: 0;
+  box-shadow: var(--shadow-md);
 }
 
 .step-content {
   display: flex;
-  gap: 15px;
+  gap: var(--space-md);
   align-items: center;
   flex: 1;
 }
@@ -73,7 +75,7 @@
 .step-image {
   width: 80px;
   height: 60px;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -89,14 +91,14 @@
 }
 
 .step-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #1e3a8a;
-  margin-bottom: 8px;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
 }
 
 .step-description {
-  color: #6b7280;
+  color: var(--color-neutral-500);
   font-size: 0.9rem;
   line-height: 1.5;
   margin-bottom: 0;

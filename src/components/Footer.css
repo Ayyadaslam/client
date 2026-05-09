@@ -1,63 +1,66 @@
 /* Footer Styles */
 .footer {
-  background-color: #e8eef3;
-  padding: 4rem 0 0;
-  margin-top: 4rem;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  padding: var(--space-4xl) 0 0;
+  margin-top: var(--space-4xl);
 }
 
 .footer-content {
-  padding-bottom: 3rem;
+  padding-bottom: var(--space-3xl);
 }
 
 /* Brand Section */
 .footer-brand-section {
-  padding-right: 2rem;
+  padding-right: var(--space-lg);
 }
 
 .footer-brand {
-  color: #0c4a6e;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-lg);
+  animation: fade-in var(--motion-duration-base) var(--motion-ease);
 }
 
 .footer-description {
-  color: #64748b;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-lg);
+  margin-bottom: var(--space-lg);
   max-width: 350px;
 }
 
 .contact-btn {
   display: inline-block;
-  background-color: #0c4a6e;
+  background-color: var(--color-secondary);
   color: #ffffff;
-  padding: 0.75rem 2rem;
-  border-radius: 25px;
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-full);
   text-decoration: none;
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);
+  transition: background-color var(--motion-duration-base) var(--motion-ease),
+    transform var(--motion-duration-fast) var(--motion-ease),
+    box-shadow var(--motion-duration-fast) var(--motion-ease);
 }
 
 .contact-btn:hover {
-  background-color: #0a3d5c;
+  background-color: #e8932a;
   color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(12, 74, 110, 0.3);
+  box-shadow: 0 8px 20px rgba(245, 158, 66, 0.3);
 }
 
 /* Footer Links Section */
 .footer-links-section {
-  padding-left: 1.5rem;
+  padding-left: var(--space-lg);
 }
 
 .footer-heading {
-  color: #1e293b;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 1.25rem;
+  color: #ffffff;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-lg);
 }
 
 .footer-links {
@@ -67,24 +70,30 @@
 }
 
 .footer-links li {
-  margin-bottom: 0.75rem;
+  margin-bottom: var(--space-md);
 }
 
 .footer-links a {
-  color: #64748b;
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  font-size: 0.95rem;
-  transition: color 0.3s ease;
+  font-size: var(--font-size-sm);
+  transition: color var(--motion-duration-fast) var(--motion-ease),
+    padding-left var(--motion-duration-fast) var(--motion-ease);
+  position: relative;
+  display: inline-block;
+  padding-left: 0;
 }
 
 .footer-links a:hover {
-  color: #0c4a6e;
+  color: #ffffff;
+  padding-left: var(--space-sm);
 }
 
 /* Footer Bottom */
 .footer-bottom {
-  border-top: 1px solid #cbd5e1;
-  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: var(--space-lg) 0;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .footer-bottom-content {
@@ -92,24 +101,25 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: var(--space-md);
 }
 
 .footer-bottom-link {
-  color: #1e293b;
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  transition: color var(--motion-duration-fast) var(--motion-ease);
 }
 
 .footer-bottom-link:hover {
-  color: #0c4a6e;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .footer-copyright {
-  color: #64748b;
-  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--font-size-sm);
   text-align: center;
   flex: 1;
 }

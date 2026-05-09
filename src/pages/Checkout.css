@@ -1,5 +1,5 @@
 .checkout-page {
-  padding: 2rem 0;
+  padding: var(--space-lg) 0;
   min-height: 70vh;
   background-color: #ffffff;
 }
@@ -14,7 +14,7 @@
 
 /* Breadcrumb */
 .checkout-page .breadcrumb-section {
-  margin-bottom: 2rem;
+  margin-bottom: var(--space-lg);
 }
 
 .checkout-page .breadcrumb {
@@ -24,80 +24,88 @@
 }
 
 .checkout-page .breadcrumb-item a {
-  color: #6c757d;
+  color: var(--color-neutral-500);
   text-decoration: none;
+  transition: color var(--motion-duration-fast) var(--motion-ease);
 }
 
 .checkout-page .breadcrumb-item a:hover {
-  color: #2c3e50;
+  color: var(--color-neutral-900);
   text-decoration: underline;
 }
 
 .checkout-page .breadcrumb-item.active {
-  color: #2c3e50;
+  color: var(--color-neutral-900);
 }
 
 /* Billing Details Card */
 .billing-details-card {
   border: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  margin-bottom: 2rem;
+  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-lg);
+  background: #ffffff;
 }
 
 .billing-title {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: #2c3e50;
-  margin-bottom: 1.5rem;
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-neutral-900);
+  margin-bottom: var(--space-lg);
 }
 
 .billing-details-card .form-label {
-  font-weight: 500;
-  color: #495057;
-  margin-bottom: 0.5rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-neutral-700);
+  margin-bottom: var(--space-sm);
   text-align: left;
   display: block;
 }
 
 .billing-details-card .required {
-  color: #dc3545;
+  color: var(--color-danger);
 }
 
 .billing-details-card .form-control {
-  border-radius: 6px;
-  border: 1px solid #dee2e6;
-  padding: 0.75rem;
-  font-size: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-neutral-200);
+  padding: var(--space-md);
+  font-size: var(--font-size-md);
+  transition: border-color var(--motion-duration-base) var(--motion-ease),
+    box-shadow var(--motion-duration-fast) var(--motion-ease);
 }
 
 .billing-details-card .form-control:focus {
-  border-color: #2c3e50;
-  box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.1);
+  outline: none;
 }
 
 .billing-details-card .form-check {
-  margin-top: 1rem;
+  margin-top: var(--space-lg);
 }
 
 .billing-details-card .form-check-input {
-  margin-top: 0.25rem;
+  margin-top: var(--space-xs);
   cursor: pointer;
+  accent-color: var(--color-primary);
 }
 
 .billing-details-card .form-check-label {
-  margin-left: 0.5rem;
+  margin-left: var(--space-sm);
   cursor: pointer;
-  color: #495057;
+  color: var(--color-neutral-700);
 }
 
 /* Order Summary Card */
 .order-summary-card {
   border: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-lg);
   position: sticky;
-  top: 2rem;
+  top: var(--space-lg);
+  background: #ffffff;
+}
 }
 
 .order-summary-title {
